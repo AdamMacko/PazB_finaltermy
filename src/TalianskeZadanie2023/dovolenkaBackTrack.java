@@ -23,7 +23,7 @@ public class dovolenkaBackTrack {
 
     }
 
-    public void vytvorMoznosti() {
+    public int  vytvorMoznosti() {
         int pocetM = 0;
         int pocetH = 0;
         int poSebem =0;
@@ -53,7 +53,8 @@ public class dovolenkaBackTrack {
             moznosti.add(moznost);
         }
 
-        System.out.println(moznosti);
+        System.out.println(moznosti + "     "  + moznosti.size());
+        return moznosti.size();
     }
 
     public void generuj(int k) {
